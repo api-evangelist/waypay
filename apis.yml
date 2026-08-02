@@ -1,19 +1,46 @@
 aid: waypay
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/waypay.png
 name: WayPay
-description: WayPay is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: WayPay was a cloud-based B2B payments and accounts-payable-automation fintech headquartered
+  in Burlington, Ontario, Canada. Its platform let businesses pay any supplier by any method (EFT, cheque,
+  credit card, wire) from a single dashboard, reconciling against accounting and ERP software to automate
+  the accounts-payable workflow. Royal Bank of Canada (RBC) announced its acquisition of WayPay in July 2019,
+  after which the independent brand was retired. As of this enrichment pass the domain waypay.ca resolves via
+  DNS (behind Akamai, enterprise mail) but serves no public site (HTTP 503), and there is no reachable public
+  developer portal, API, or documentation surface.
 url: https://raw.githubusercontent.com/api-evangelist/waypay/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - 500-global
+x-status: acquired
+x-acquired-by: Royal Bank of Canada
+x-acquired-date: '2019-07'
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Payments
+- Fintech
+- Accounts Payable
+- B2B
+- Canada
+- Financial Services
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/waypay-domain-security.yml
 - type: Website
   url: https://waypay.ca
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
