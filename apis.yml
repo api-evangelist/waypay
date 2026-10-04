@@ -50,7 +50,7 @@ tags:
 - Accounts Payable
 - B2B
 - Canada
-- Financial-Services
+- Financial Services
 - Acquired
 tags_raw:
 - Company
@@ -61,6 +61,7 @@ tags_raw:
 - Canada
 - Financial Services
 - Acquired
+- Financial-Services
 apis: []
 maintainers:
 - FN: Kin Lane
